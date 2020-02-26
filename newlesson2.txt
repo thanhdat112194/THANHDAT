@@ -1,0 +1,77 @@
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+  	<title></title>
+  	<style type="text/css">
+  		.loop{
+  			scroll-behavior:smooth;
+  			  position:relative;
+  			  overflow: auto;
+
+  			  border: 1px solid;
+  			  max-width:100px;
+  			  max-height: 200px;
+  		}
+  	</style>
+  </head>
+  <body>
+    <h1>What is </h1>
+<?php
+
+
+//php function
+// PHP has a lot of built-in functions that can be called directly, from within a script, to perform a specific task.
+// it is possible to create your own functions.
+
+
+
+
+//--------------
+
+
+
+
+// What is an Exception
+// With PHP 5 came a new object oriented way of dealing with errors.
+// Exception handling is used to change the normal flow of the code execution if a specified error (exceptional) condition occurs. This condition is called an exception.
+
+// This is what normally happens when an exception is triggered:
+
+// The current code state is saved
+// The code execution will switch to a predefined (custom) exception handler function
+// Depending on the situation, the handler may then resume the execution from the saved code state, terminate the script execution or continue the script from a different location in the code
+// We will show different error handling methods:
+// Basic use of Exceptions
+// Creating a custom exception handler
+// Multiple exceptions
+// Re-throwing an exception
+// Setting a top level exception handler
+// Note: Exceptions should only be used with error conditions, and should not be used to jump to another place in the code at a specified point.
+//-----------
+// Try, throw and catch
+// To avoid the error from the example above, we need to create the proper code to handle an exception.
+
+// Proper exception code should include:
+
+// try - A function using an exception should be in a "try" block. If the exception does not trigger, the code will continue as normal. However if the exception triggers, an exception is "thrown"
+// throw - This is how you trigger an exception. Each "throw" must have at least one "catch"
+// catch - A "catch" block retrieves an exception and creates an object containing the exception information
+ //echo strrev("Hello World!");
+
+?>  
+
+
+</div>
+
+
+
+
+
+
+
+
+<p></p>
+  </body>
+  </html>
+
