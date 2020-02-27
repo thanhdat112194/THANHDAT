@@ -15,35 +15,45 @@ for($i=0;$i<$a;$i++){
 print_r($change);
  
 
-
+echo "<br>";
 //2
 //if an array has a string ''PHP'', delete next elements
-// $del = [12,55,47,58,45455,1,2,"php","python","node"]; 
-// $b= count($del);
+$del = [12,55,47,58,45455,1,2,"php","python","node"]; 
+$c=count($del);
+for($i=0;$i<$c;$i++){
+  if($del[$i]=="php"){
+   print_r(array_slice($del,0,$i+1));
+  }
+}
 // for($i=0;$i<$b;$i++){
 //   if($del[$i]=="php"){
-//     $del[$i]= "";
+//     $del[$id]= "";
 //   }
 // }
 // print_r($del);//tye next
-//3
+// echo "<br>";
 //you should inside array  look for min and max after (min+max)
-$num = [5,7,10,3,2,12,9,11,4];
-//try it home 
-$e=count($num);
+echo "<br>";
+$a = [5,7,10,3,2,12,9,11,4];
+// //try it home 
+$e=count($a);
 for ($j=0; $j <$e; $j++) {//where your $a dd  
     for($i=0;$i<$e-1;$i++){
           if($a[$i]<$a[$i+1]){//for next element you must write $i+1 but you write $i=$i+1
-            //I WROTE $i++ is that true when 
-            $tmp=$a[$i];            $a[$i]=$a[$i+1];
+            
+            $tmp=$a[$i];           
+            $a[$i]=$a[$i+1];
             $a[$i+1]=$tmp;
           }
 
     }
 }
-print_r($num);
+print_r($a);
+$max = $a[0];
+echo "<br>";
+echo $max;
 
-//4
+//
 //you should change "bye" to  "hello"; 
 echo "<br>";
 $str = "bye world";
