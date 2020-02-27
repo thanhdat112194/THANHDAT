@@ -36,23 +36,36 @@ for($i=0;$i<$c;$i++){
 echo "<br>";
 $a = [5,7,10,3,2,12,9,11,4];
 // //try it home 
-$e=count($a);
-for ($j=0; $j <$e; $j++) {//where your $a dd  
-    for($i=0;$i<$e-1;$i++){
-          if($a[$i]<$a[$i+1]){//for next element you must write $i+1 but you write $i=$i+1
+// $e=count($a);
+// for ($j=0; $j <$e; $j++) {//where your $a dd  
+//     for($i=0;$i<$e-1;$i++){
+//           if($a[$i]<$a[$i+1]){//for next element you must write $i+1 but you write $i=$i+1
             
-            $tmp=$a[$i];           
-            $a[$i]=$a[$i+1];
-            $a[$i+1]=$tmp;
-          }
+//             $tmp=$a[$i];           
+//             $a[$i]=$a[$i+1];
+//             $a[$i+1]=$tmp;
+//           }
 
-    }
-}
-print_r($a);
+//     }
+// }
+// print_r($a);
+// $max = $a[0];
+// echo "<br>";
+// echo $max;
 $max = $a[0];
+$min = $a[0];
+$c = count($a);
+for($i=0;$i<$c;$i++){
+  if($a[$i]>$max){
+    $max = $a[$i];
+  }
+  if($a[$i]<$min){
+    $min = $a[$i];
+  }
+}
+print_r($max);
 echo "<br>";
-echo $max;
-
+print_r($min);
 //
 //you should change "bye" to  "hello"; 
 echo "<br>";
