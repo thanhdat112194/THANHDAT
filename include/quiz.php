@@ -18,13 +18,22 @@ print_r($change);
 echo "<br>";
 //2
 //if an array has a string ''PHP'', delete next elements
-$del = [12,55,47,58,45455,1,2,"php","python","node"]; 
+$del = [12,55,47,58,45455,1,2,"php","python","node","ok"]; 
+$tmp  = [];
 $c=count($del);
 for($i=0;$i<$c;$i++){
+
+  $tmp[] = $del[$i];//
   if($del[$i]=="php"){
-   print_r(array_slice($del,0,$i+1));
+
+        break;
+   //print_r(array_slice($del,0,$i+1));
   }
 }
+print_r($tmp);
+//good thanks you can also
+die;//next
+// here 
 // for($i=0;$i<$b;$i++){
 //   if($del[$i]=="php"){
 //     $del[$id]= "";
@@ -57,7 +66,7 @@ $min = $a[0];
 $c = count($a);
 for($i=0;$i<$c;$i++){
   if($a[$i]>$max){
-    $max = $a[$i];
+    $max = $a[$i];//here
   }
   if($a[$i]<$min){
     $min = $a[$i];
@@ -65,11 +74,11 @@ for($i=0;$i<$c;$i++){
 }
 print_r($max);
 echo "<br>";
-print_r($min);
+print_r($min);//ok
 //
 //you should change "bye" to  "hello"; 
 echo "<br>";
-$str = "bye world";
+$str = "bye world";//next
 
 // echo $c; you cAN USE explode
 $str1 = explode(" ",$str);
