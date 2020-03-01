@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .home{
+            position: absolute;
+            top: 70px;
+            border: 2px red solid;
+            width : 200px;
+            margin :10px;
+            padding: 10px;
+            height: 300px;
+        }
+        .inst{
+            position: relative;
+            border: 2px black solid;
+            
+            width : 180px;
+            height: auto;
+        }
+        .main-text{
+            position: absolute;
+            border:0.1px solid;
+            width:200px;
+            height:20px;
+            top: 5px;
+          
+            left:25px;
+        }
+        /* .rnage-size{
+          
+        } */
+    </style>
+</head>
+<body>
+    <div class="main-input">
+        <input type="text" class="main-text">
+      </div>
+    <div class="home">
+          
+          <div class="inst">
+                 <small>size</small>
+                 <input type="range" value="0" min="0" max="70" step="5" class="range-size">
+                 <input type="color" class="col">
+
+                 <input type="radio">
+                 <button></button>
+          </div>
+          
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>

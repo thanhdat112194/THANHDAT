@@ -78,7 +78,7 @@ print_r($min);//ok
 //
 //you should change "bye" to  "hello"; 
 echo "<br>";
-$str = "bye world";//next
+$str = "bye world";
 
 // echo $c; you cAN USE explode
 $str1 = explode(" ",$str);
