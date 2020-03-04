@@ -21,7 +21,7 @@ $people = [ //bread
     ],//more .......
 
 ];
-$mobile_product = [
+$mobile_product = [// this lesson hard can u teach me again
            [
                "model"=>"sumsung e250",
                "colore"=> "red",

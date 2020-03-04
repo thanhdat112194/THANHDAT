@@ -1,23 +1,17 @@
 <?php
-"you should create error in myexplode 
-example
-you should change this error ok ok";
+// "you should create error in myexplode 
+// example
+// you should change this error ok ok";
 
 
 function myexplode($s,$cut){
 //you create if here
-function check($a,$b){
-  if(!is_stirng($a) AND !is_string($b)){
-    throw new Exception ("Value is not impossible");
-  }
-  return [$a,$b];
-}
-try{
+//
 
-}
-catch(Exception $e) {
-  echo 'Message: ' .$e->getMessage();
-}
+  if(!is_stirng($s)){
+    throw new Exception("Value is not impossible");
+   
+  }
     $string = "";
     $result = []; //what is that
 //global $le;
@@ -37,14 +31,15 @@ catch(Exception $e) {
 //   how can we fix it
 return $result; //i understand but i ask that 
 // $result = [] is the array right?yes how we change string to  array
-
- 
-    // you dont use this explode dd
-  }//--end function
-
-//my error 
-//---------------
-
+}//--end function
+//after
+try{// try must be out put
+  error_reporting(0);//we can off php message about error
+  $exp = myexplode("hello,my,explode",",");
+  print_r($exp);
+}catch(Exception $e){
+ echo $e->getMessage();
+}
 
 
 
