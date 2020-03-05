@@ -65,19 +65,28 @@ var_dump($age);
 
 
 
-die;
-$age = [];
-foreach($people as $pp){//knife 
-    $age[] = $pp["age"]; 
-}
-$colore = [];
-foreach($people as $pp){//knife 
-    $colore[] = $pp["colore"]; 
-}
+// $age = [];
+// foreach($people as $pp){//knife 
+//     $age[] = $pp["age"]; 
+// }
+// $colore = [];
+// foreach($people as $pp){//knife 
+//     $colore[] = $pp["colore"]; 
+// }
 //the code will repeat ok its 
 //var_dump($id,$age);
-
- 
+echo "<br>";
+ function cuteachelemt($people,$cut){
+     $name = [];
+     foreach($people as $value){
+         $name[]= $cut($value);
+     }
+     return $name;
+ }
+    $name = cuteachelemt($people,function($nameid){
+        return $nameid["name"];
+    });
+    var_dump($name);
 
 
 ?>

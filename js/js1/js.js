@@ -19,17 +19,17 @@ but.addEventListener("click",function(){
 
 var mydiv2 = document.querySelector(".mydiv2")
 var but1 = document.querySelector(".but1")
-but.addEventListener("click",function(){
+but1.addEventListener("click",function(){
     mydiv2.style.color = "red"; 
 })
 var mydiv2 = document.querySelector(".mydiv2")
 var but2 = document.querySelector(".but2")
-but.addEventListener("click",function(){
+but2.addEventListener("click",function(){
     mydiv2.style.color = "blue"; 
 })
 var mydiv2 = document.querySelector(".mydiv2")
 var but3 = document.querySelector(".but3")
-but.addEventListener("click",function(){
+but3.addEventListener("click",function(){
     mydiv2.style.color = "yellow";//ok 
 })
 
