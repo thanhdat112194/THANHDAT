@@ -69,7 +69,7 @@
 <?php
 
 if(isset($_POST["sub"])){
-      $cookie_name = $_POST["name"];
+      $cookie_name1 = $_POST["name"];
       //we put in cookie 
      // setcookie("cookie_name",$cookie_name,time()+50,"/");
       //50 secund
@@ -100,6 +100,10 @@ if(isset($_POST["sub"])){
 if(isset($_POST["sub"])){
      $cookie_check = $_POST['check'];
      echo "This wiil be content in 10 minutes";
+}
+if(isset($_POST["sub"])){
+     $cookie_text1 = $_POST["surname"];
+     echo $_POST["surname"];
 }
 //   a cookie is a small file with maximum size of 4kb that the web /////server  stores on the client computer
 //  how use cookie";
