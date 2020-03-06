@@ -69,14 +69,16 @@
 <?php
 
 if(isset($_POST["sub"])){
-      $cookie_name1 = $_POST["name"];
+      $cookie_name = $_POST["name"];
       //we put in cookie 
      // setcookie("cookie_name",$cookie_name,time()+50,"/");
       //50 secund
       //  '/'  you can use cookie other place 
       echo  "my_firstname ".$_POST["name"];
       echo "<br>";
+      setcookie("cookie_name",$cookie_name,time() + (86400 * 30));
 }
+
 if(isset($_POST["sub"])){
      $cookie_surename = $_POST["surname"];
      echo"my_surename ".$_POST["surname"];
